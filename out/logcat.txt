@@ -1,0 +1,153 @@
+10-23 15:11:47.054   521   534 V SplashScreenExceptionList: SplashScreen checking exception for package vn.dichtructiep (target sdk:35) -> false
+10-23 15:11:47.057   521   534 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=vn.dichtructiep/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-23 15:11:47.113   521  2377 D CoreBackPreview: Window{e0187ff u0 Splash Screen vn.dichtructiep}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@2f80c91, mPriority=0, mIsAnimationCallback=false}
+10-23 15:11:47.476   521   812 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10192, mPackageName='vn.dichtructiep, mAppProcessToken='null'}
+10-23 15:11:48.032   521   549 I ActivityManager: Start proc 2513:vn.dichtructiep/u0a192 for next-top-activity {vn.dichtructiep/vn.dichtructiep.MainActivity}
+10-23 15:11:48.070  2513  2513 I vn.dichtructiep: Late-enabling -Xcheck:jni
+10-23 15:11:48.093  2513  2513 I vn.dichtructiep: Using CollectorTypeCC GC.
+10-23 15:11:48.094  2513  2513 W vn.dichtructiep: Unexpected CPU variant for x86: x86_64.
+10-23 15:11:48.094  2513  2513 W vn.dichtructiep: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-23 15:11:48.181  2513  2513 W ziparchive: Unable to open '/data/app/~~DQYptcNnh3VgEbFwoUvrAg==/vn.dichtructiep-KKahHiV2jsMytbYpcAoFXQ==/base.dm': No such file or directory
+10-23 15:11:48.181  2513  2513 W ziparchive: Unable to open '/data/app/~~DQYptcNnh3VgEbFwoUvrAg==/vn.dichtructiep-KKahHiV2jsMytbYpcAoFXQ==/base.dm': No such file or directory
+10-23 15:11:48.315  1059  1059 D CarrierSvcBindHelper: onPackageAdded: vn.dichtructiep
+10-23 15:11:48.351   521   538 V WindowManager:     info={id=6 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{323e79a Task{99a2e70 #8 type=standard A=10192:vn.dichtructiep}}} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=8)/@0xc42c889 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{1f6b8cb Task{d0896c3 #1 type=home}}} m=TO_BACK f=NONE leash=Surface(name=Task=1)/@0xb15deac sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-23 15:11:48.544  1059  1380 D ImsResolver: maybeAddedImsService, packageName: vn.dichtructiep
+10-23 15:11:48.887   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{803e1db com.google.android.youtube/10139} BLOCKED
+10-23 15:11:48.891   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{2da1478 com.google.android.contacts/10156} BLOCKED
+10-23 15:11:48.891   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{5e77751 com.google.android.partnersetup/10124} BLOCKED
+10-23 15:11:48.892   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{38eabb6 com.google.android.cellbroadcastreceiver/10184} BLOCKED
+10-23 15:11:49.595  2513  2513 D nativeloader: Configuring clns-6 for other apk /data/app/~~DQYptcNnh3VgEbFwoUvrAg==/vn.dichtructiep-KKahHiV2jsMytbYpcAoFXQ==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~DQYptcNnh3VgEbFwoUvrAg==/vn.dichtructiep-KKahHiV2jsMytbYpcAoFXQ==/lib/x86_64:/data/app/~~DQYptcNnh3VgEbFwoUvrAg==/vn.dichtructiep-KKahHiV2jsMytbYpcAoFXQ==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/vn.dichtructiep
+10-23 15:11:49.637  2513  2513 V GraphicsEnvironment: ANGLE GameManagerService for vn.dichtructiep: false
+10-23 15:11:49.637  2513  2513 V GraphicsEnvironment: vn.dichtructiep is not listed in per-application setting
+10-23 15:11:50.982  2513  2513 W vn.dichtructiep: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-23 15:11:50.982  2513  2513 W vn.dichtructiep: Common causes for lock verification issues are non-optimized dex code
+10-23 15:11:50.982  2513  2513 W vn.dichtructiep: and incorrect proguard optimizations.
+10-23 15:11:50.982  2513  2513 W vn.dichtructiep: Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-23 15:11:50.982  2513  2513 W vn.dichtructiep: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-23 15:11:50.982  2513  2513 W vn.dichtructiep: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-23 15:11:50.982  2513  2513 W vn.dichtructiep: Method void androidx.compose.runtime.snapshots.SnapshotStateList.update$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-23 15:11:51.795   521  2330 D CoreBackPreview: Window{d193b73 u0 vn.dichtructiep/vn.dichtructiep.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@492f291, mPriority=0, mIsAnimationCallback=false}
+10-23 15:11:52.460  1660  1660 I AiAiEcho: AppFetcherImplV2 updateApps package:[vn.dichtructiep], userId:[0], reason:[package is added.].
+10-23 15:11:53.217   521   538 W ziparchive: Unable to open '/data/app/~~DQYptcNnh3VgEbFwoUvrAg==/vn.dichtructiep-KKahHiV2jsMytbYpcAoFXQ==/base.dm': No such file or directory
+10-23 15:11:53.236   843   843 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: vn.dichtructiep, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+10-23 15:11:53.312   521   538 I ActivityTaskManager: Displayed vn.dichtructiep/.MainActivity for user 0: +6s146ms
+10-23 15:11:53.338   521  2346 D CoreBackPreview: Window{e0187ff u0 Splash Screen vn.dichtructiep}: Setting back callback null
+10-23 15:11:53.362   521   922 W InputManager-JNI: Input channel object 'e0187ff Splash Screen vn.dichtructiep (client)' was disposed without first being removed with the input manager!
+10-23 15:11:53.759  2513  3098 W vn.dichtructiep: Verification of boolean com.google.android.gms.common.api.internal.zabq.zaM(com.google.android.gms.common.api.internal.zai) took 176.989ms (1271.27 bytecodes/s) (5272B approximate peak alloc)
+10-23 15:11:53.781   521  2356 I ImeTracker: vn.dichtructiep:4b61f32c: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-23 15:11:53.781   521  2356 I ImeTracker: vn.dichtructiep:4b61f32c: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-23 15:11:53.870  1581  1581 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=vn.dichtructiep fieldId=0 fieldName=null extras=null}, false)
+10-23 15:11:54.169  2513  2714 W vn.dichtructiep: Verification of void com.google.android.gms.internal.mlkit_translate.zzmm.configure(com.google.firebase.encoders.config.EncoderConfig) took 111.714ms (12540.85 bytecodes/s) (54512B approximate peak alloc)
+10-23 15:11:55.511  2513  3234 D ProfileInstaller: Installing profile for vn.dichtructiep
+10-23 15:11:56.261  1104  1166 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{vn.dichtructiep/vn.dichtructiep.MainActivity}
+10-23 15:11:56.860  3280  3280 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:11:56.883  3280  3280 I AndroidRuntime: Using default boot image
+10-23 15:11:56.883  3280  3280 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:11:57.109  3280  3280 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:11:58.508  2513  2527 I vn.dichtructiep: Background concurrent copying GC freed 111678(5555KB) AllocSpace objects, 2(104KB) LOS objects, 49% free, 5067KB/10134KB, paused 25us,182us total 280.518ms
+10-23 15:11:59.102   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{ac395ea com.google.android.gm/10141} BLOCKED
+10-23 15:11:59.102   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{9f050db com.google.android.devicelockcontroller/10179} BLOCKED
+10-23 15:11:59.102   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{8575778 com.google.android.dialer/10128} BLOCKED
+10-23 15:11:59.102   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{8a6fe51 com.google.android.contacts/10156} BLOCKED
+10-23 15:11:59.102   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{43d26b6 com.google.android.apps.youtube.music/10155} BLOCKED
+10-23 15:11:59.102   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{6991fb7 com.google.android.inputmethod.latin/10146} BLOCKED
+10-23 15:11:59.442  3280  3280 D AndroidRuntime: Shutting down VM
+10-23 15:12:00.981  2513  3098 W vn.dichtructiep: Verification of android.util.SparseArray com.google.android.gms.common.internal.safeparcel.SafeParcelReader.createIBinderSparseArray(android.os.Parcel, int) took 167.337ms (262.94 bytecodes/s) (2208B approximate peak alloc)
+10-23 15:12:04.463  3703  3703 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:12:04.468  3703  3703 I AndroidRuntime: Using default boot image
+10-23 15:12:04.468  3703  3703 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:12:04.748  3703  3703 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:12:06.882   521   824 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{54cfc1a com.google.android.gm/10141} BLOCKED
+10-23 15:12:07.053  3703  3703 D AndroidRuntime: Shutting down VM
+10-23 15:12:09.014  3030  3030 I RecognitionServiceInten: Trigger application overridden to vn.dichtructiep
+10-23 15:12:09.179   521  2330 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{59fb271 com.google.android.settings.intelligence/10118} BLOCKED
+10-23 15:12:09.191   521  2360 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{c2c04ad com.google.android.settings.intelligence/10118} BLOCKED
+10-23 15:12:09.264  1494  4123 I BlockstoreStorage: Clearing Blockstore Data for package vn.dichtructiep [CONTEXT service_id=258 ]
+10-23 15:12:11.463   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{ca8df3e com.android.camera2/10145} BLOCKED
+10-23 15:12:11.463   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{fe0219f com.google.android.gm/10141} BLOCKED
+10-23 15:12:11.463   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{ca6f2ec com.google.android.devicelockcontroller/10179} BLOCKED
+10-23 15:12:11.463   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{fa186b5 com.google.android.rkpdapp/10191} BLOCKED
+10-23 15:12:11.463   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{3cfb14a com.google.android.settings.intelligence/10118} BLOCKED
+10-23 15:12:11.463   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{7351a59 com.google.android.projection.gearhead/10123} BLOCKED
+10-23 15:12:15.272  4383  4383 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:12:15.309  4383  4383 I AndroidRuntime: Using default boot image
+10-23 15:12:15.309  4383  4383 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:12:15.459  3030  3030 I RecognitionServiceInten: Trigger application overridden to vn.dichtructiep
+10-23 15:12:15.561  4383  4383 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:12:16.932  4383  4383 D AndroidRuntime: Shutting down VM
+10-23 15:12:21.802   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{4d3c75f com.google.android.apps.messaging/10130} BLOCKED
+10-23 15:12:23.148  4693  4693 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:12:23.158  4693  4693 I AndroidRuntime: Using default boot image
+10-23 15:12:23.158  4693  4693 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:12:23.464  4693  4693 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:12:24.642  4693  4693 D AndroidRuntime: Shutting down VM
+10-23 15:12:25.951  2513  2527 I vn.dichtructiep: Background young concurrent copying GC freed 97682(3979KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 6265KB/10134KB, paused 2.753ms,11us total 174.478ms
+10-23 15:12:29.319  4787  4787 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:12:29.326  4787  4787 I AndroidRuntime: Using default boot image
+10-23 15:12:29.326  4787  4787 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:12:29.523  4787  4787 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:12:30.632  4787  4787 D AndroidRuntime: Shutting down VM
+10-23 15:12:31.752  3030  3030 I RecognitionServiceInten: Trigger application overridden to vn.dichtructiep
+10-23 15:12:31.961   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{38e0486 com.google.android.youtube/10139} BLOCKED
+10-23 15:12:31.962   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{5d87013 com.google.android.apps.maps/10154} BLOCKED
+10-23 15:12:31.962   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{e7cf147 com.google.android.contacts/10156} BLOCKED
+10-23 15:12:33.986   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{8c293e7 com.google.android.apps.messaging/10130} BLOCKED
+10-23 15:12:35.646   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{222f426 com.google.android.contacts/10156} BLOCKED
+10-23 15:12:37.745   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{d7f6757 com.google.android.gm/10141} BLOCKED
+10-23 15:12:39.461  5017  5017 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:12:39.471  5017  5017 I AndroidRuntime: Using default boot image
+10-23 15:12:39.471  5017  5017 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:12:39.678  5017  5017 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:12:41.088  5017  5017 D AndroidRuntime: Shutting down VM
+10-23 15:12:44.234   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{6a3241e com.google.android.apps.messaging/10130} BLOCKED
+10-23 15:12:44.702  5143  5143 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:12:44.706  5143  5143 I AndroidRuntime: Using default boot image
+10-23 15:12:44.709  5143  5143 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:12:44.858  5143  5143 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:12:45.307   521  2345 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{4c7ddc com.google.android.settings.intelligence/10118} BLOCKED
+10-23 15:12:46.037  5143  5143 D AndroidRuntime: Shutting down VM
+10-23 15:12:47.015  2513  2513 I ImeTracker: vn.dichtructiep:ffa289c7: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+10-23 15:12:47.022  1581  1581 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=vn.dichtructiep fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=168]}, false)
+10-23 15:12:47.043  1581  1581 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=vn.dichtructiep fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=168]}, true)
+10-23 15:12:47.063  1581  1581 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=vn.dichtructiep fieldId=-1 fieldName=null extras=Bundle[{androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true}]}, false)
+10-23 15:12:47.115  2513  2513 I ImeTracker: vn.dichtructiep:73845959: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-23 15:12:47.285  1581  1581 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=vn.dichtructiep fieldId=-1 fieldName=null extras=Bundle[{androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true}], IncognitoMode = false, DeviceLocked = false
+10-23 15:12:47.334   521   903 D CoreBackPreview: Window{d193b73 u0 vn.dichtructiep/vn.dichtructiep.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3bf855c, mPriority=0, mIsAnimationCallback=false}
+10-23 15:12:47.387   521  2026 I ImeTracker: vn.dichtructiep:ffa289c7: onFailed at PHASE_WM_SHOW_IME_RUNNER
+10-23 15:12:49.079  2513  2513 I ImeTracker: vn.dichtructiep:73845959: onShown
+10-23 15:12:50.006  1581  1581 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x42000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=vn.dichtructiep fieldId=-1 fieldName=null extras=Bundle[{androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true}], IncognitoMode = false, DeviceLocked = false
+10-23 15:12:58.779   521  2330 W ProcessStats: Tracking association SourceState{894a62b vn.dichtructiep/10192 BTop #6798} whose proc state 2 is better than process ProcessState{ecf43b9 com.google.android.gms.persistent/10131 pkg=com.google.android.gms} proc state 4 (935 skipped)
+10-23 15:12:59.598  2513  2513 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@1@vn.dichtructiep>
+10-23 15:13:08.153   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{9a5f935 com.google.android.contacts/10156} BLOCKED
+10-23 15:13:17.155  2513  5917 I MLKitRemoteConfigSaver: remote config settings file not yet present: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.RemoteConfig
+10-23 15:13:17.156  2513  5917 I MLKitInstallationIdSaver: Installation id file not yet present: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.InstallationId
+10-23 15:13:17.216  2513  5918 I native  : I0000 00:00:1792768397.216890    5918 package.cc:81] Load: No checksum: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.translate.models/en_vi/merged_dict_en_vi_25_both.bin
+10-23 15:13:17.345  2513  5918 I native  : I0000 00:00:1792768397.325049    5918 package.cc:81] Load: No checksum: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.translate.models/en_vi/merged_dict_en_vi_25_from_en.bin
+10-23 15:13:17.346  2513  5918 I native  : I0000 00:00:1792768397.346286    5918 package.cc:81] Load: No checksum: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.translate.models/en_vi/merged_dict_en_vi_25_update.bin
+10-23 15:13:17.755  2513  5917 I MLKitInstallationIdSaver: Creating installation id: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.InstallationId
+10-23 15:13:17.765  2513  5917 D MLKitInstallationIdSaver: Succeeded writing installation id: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.InstallationId:
+10-23 15:13:17.874  2513  2513 W pool-6-thread-2: type=1400 audit(0.0:62): avc:  denied  { read } for  name="version" dev="proc" ino=4026532032 scontext=u:r:untrusted_app:s0:c192,c256,c512,c768 tcontext=u:object_r:proc_version:s0 tclass=file permissive=0 app=vn.dichtructiep
+10-23 15:13:18.213   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{70bb6b3 com.google.android.contacts/10156} BLOCKED
+10-23 15:13:18.759  2513  5917 I MLKitRemoteConfigSaver: Creating remote config settings: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.RemoteConfig
+10-23 15:13:18.761  2513  5917 D MLKitRemoteConfigSaver: Succeeded writing remote config settings: /data/user/0/vn.dichtructiep/no_backup/com.google.mlkit.RemoteConfig:
+10-23 15:13:23.948   521  1941 I ImeTracker: vn.dichtructiep:be72412d: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
+10-23 15:13:23.957   521  2346 D CoreBackPreview: Window{d193b73 u0 vn.dichtructiep/vn.dichtructiep.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9c35fab, mPriority=0, mIsAnimationCallback=false}
+10-23 15:13:24.063  2513  2513 I ImeTracker: vn.dichtructiep:7d1c3441: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+10-23 15:13:24.064   521  2356 I ImeTracker: vn.dichtructiep:7d1c3441: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-23 15:13:24.064  2513  2513 I ImeTracker: vn.dichtructiep:be72412d: onHidden
+10-23 15:13:26.268  2513  2513 I ImeTracker: vn.dichtructiep:7fb3df30: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+10-23 15:13:26.268  2513  2513 I ImeTracker: vn.dichtructiep:7fb3df30: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+10-23 15:13:26.278  1581  1581 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=vn.dichtructiep fieldId=0 fieldName=null extras=null}, true)
+10-23 15:13:27.325   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{69b3423 com.google.android.contacts/10156} BLOCKED
+10-23 15:13:28.199  6105  6105 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:13:28.220  6105  6105 I AndroidRuntime: Using default boot image
+10-23 15:13:28.220  6105  6105 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:13:28.402  6105  6105 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:13:29.484  6105  6105 D AndroidRuntime: Shutting down VM
+10-23 15:13:34.322  2513  2513 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@1@vn.dichtructiep>
+10-23 15:13:35.839  6165  6165 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 15:13:35.844  6165  6165 I AndroidRuntime: Using default boot image
+10-23 15:13:35.844  6165  6165 I AndroidRuntime: Leaving lock profiling enabled
+10-23 15:13:35.989  6165  6165 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 15:13:37.072  6165  6165 D AndroidRuntime: Shutting down VM
+10-23 15:13:37.356   521   572 I AppsFilter: interaction: PackageSetting{796caea vn.dichtructiep/10192} -> PackageSetting{2e35bd4 com.google.android.contacts/10156} BLOCKED
