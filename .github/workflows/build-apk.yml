@@ -6,6 +6,9 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,12 +20,70 @@ jobs:
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
       - name: Build debug + release APK
+        shell: bash
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon assembleDebug assembleRelease
+          ./gradlew --no-daemon assembleDebug assembleRelease 2>&1 | tee build.log
+          status=${PIPESTATUS[0]}
+          grep -E '^(w|e): ' build.log > warnings.txt || true
+          exit $status
       - uses: actions/upload-artifact@v4
         with:
           name: DichTrucTiep-apk
           path: |
             app/build/outputs/apk/debug/*.apk
             app/build/outputs/apk/release/*.apk
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-log
+          path: |
+            build.log
+            warnings.txt
+
+  # Chạy thử trên emulator Android 14: mở các màn hình, chụp ảnh, thu log crash
+  smoke-test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: DichTrucTiep-apk
+          path: apk
+      - uses: actions/download-artifact@v4
+        with:
+          name: build-log
+          path: log
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          profile: pixel_6
+          disable-animations: true
+          script: bash ci/smoke.sh
+      - name: Publish APK + screenshots to branch build-output
+        if: always()
+        run: |
+          mkdir -p publish
+          cp -r out publish/ 2>/dev/null || true
+          cp log/* publish/ 2>/dev/null || true
+          cp apk/debug/*.apk apk/release/*.apk publish/ 2>/dev/null || true
+          cd publish
+          git init -q -b build-output
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -qm "Build ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" build-output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-test
+          path: out
