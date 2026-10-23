@@ -26,6 +26,10 @@ android {
             // Ký bằng khóa debug để có thể cài thử bản release ngay.
             // Khi phát hành lên Google Play, thay bằng signingConfig riêng.
             signingConfig = signingConfigs.getByName("debug")
+            // Bản phát hành chỉ gồm thư viện cho điện thoại ARM (giảm dung lượng APK)
+            ndk {
+                abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+            }
         }
     }
 

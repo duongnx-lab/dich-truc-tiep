@@ -73,7 +73,12 @@ gradlew.bat assembleDebug
 ```
 
 ### Cách 3 — GitHub Actions (không cần cài gì)
-Đẩy thư mục này lên một repo GitHub; workflow `.github/workflows/build-apk.yml` sẽ tự build. Tải APK ở tab **Actions › (lần chạy) › Artifacts**.
+Mã nguồn đã có trên repo riêng tư **github.com/duongnx-lab/dich-truc-tiep**. Mỗi lần đẩy code lên nhánh `main`, workflow `.github/workflows/build-apk.yml` (nằm trong repo) sẽ:
+1. build APK debug + release,
+2. chạy thử trên emulator Android 14 (mở từng màn hình, chụp ảnh, kiểm tra crash),
+3. đưa APK + ảnh chụp vào nhánh `build-output`, đồng thời để ở tab **Actions › (lần chạy) › Artifacts**.
+
+Thư mục `ci/` chứa kịch bản chạy thử trên emulator.
 
 Yêu cầu máy: **Android 8.0 (API 26) trở lên**. Bộ nhận dạng Android cần ứng dụng **Google** (hoặc dịch vụ nhận dạng giọng nói khác) trên máy.
 

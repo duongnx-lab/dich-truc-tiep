@@ -257,6 +257,7 @@ fun ListenScreen(onBack: () -> Unit, onSettings: () -> Unit) {
                 EmptyListenHint(
                     target = s.listenTarget,
                     android = s.sttEngine == SttEngine.ANDROID,
+                    running = ui.running,
                     modifier = Modifier.weight(1f),
                 )
             } else {
@@ -322,7 +323,7 @@ fun ListenScreen(onBack: () -> Unit, onSettings: () -> Unit) {
 }
 
 @Composable
-private fun EmptyListenHint(target: String, android: Boolean, modifier: Modifier = Modifier) {
+private fun EmptyListenHint(target: String, android: Boolean, running: Boolean, modifier: Modifier = Modifier) {
     Column(
         modifier
             .fillMaxWidth()
@@ -337,8 +338,9 @@ private fun EmptyListenHint(target: String, android: Boolean, modifier: Modifier
         )
         Spacer(Modifier.height(16.dp))
         Text(
-            "Bấm micro để bắt đầu",
+            if (running) "Đang nghe… mời người nói bắt đầu" else "Bấm micro để bắt đầu",
             style = MaterialTheme.typography.titleLarge,
+            textAlign = TextAlign.Center,
             fontWeight = FontWeight.SemiBold,
         )
         Spacer(Modifier.height(8.dp))
